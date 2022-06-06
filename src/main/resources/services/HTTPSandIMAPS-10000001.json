@@ -1,6 +1,6 @@
 {
   "@class" : "org.apereo.cas.services.RegexRegisteredService",
-  "serviceId" : "^https://.*.herokuapp.com.*",
+  "serviceId" : ".*",
   "name" : "HTTPSandIMAPS",
   "id" : 10000001,
   "description" : "This application definition represents everything that is accepted by CAS!",
