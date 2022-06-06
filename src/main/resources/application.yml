@@ -20,8 +20,8 @@ cas:
                 defaults:
                     access: ANONYMOUS
     server:
-        name: https://casserver.herokuapp.com
-        prefix: https://casserver.herokuapp.com/cas
+        name: https://cas-edu.herokuapp.com/
+        prefix: https://cas-edu.herokuapp.com/cas
         tomcat:
             http:
                 enabled: false
@@ -34,11 +34,11 @@ eureka:
         healthcheck:
             enabled: true
         serviceUrl:
-            defaultZone: https://caseureka.herokuapp.com/eureka/
+            defaultZone: https://cas-edu.herokuapp.com/eureka/
     instance:
-        health-check-url: https://casserver.herokuapp.com/cas/actuator/health
-        home-page-url: https://casserver.herokuapp.com/cas/
-        status-page-url: https://casserver.herokuapp.com/cas/actuator/info
+        health-check-url: https://cas-edu.herokuapp.com/cas/actuator/health
+        home-page-url: https://cas-edu.herokuapp.com/cas/
+        status-page-url: https://cas-edu.herokuapp.com/cas/actuator/info
 management:
     endpoints:
         enabled-by-default: true
@@ -55,7 +55,7 @@ spring:
             client:
                 enabled: true
                 instance:
-                    management-base-url: https://casserver.herokuapp.com/cas
+                    management-base-url: https://cas-edu.herokuapp.com/cas
                 name: CAS
                 password: Mellon
                 url: https://casbootadminserver.herokuapp.com
